@@ -15,7 +15,7 @@
 		B5CF10851AE7B03500F5CB9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5CF10831AE7B03500F5CB9E /* LaunchScreen.xib */; };
 		B5CF10911AE7B03500F5CB9E /* ScreenCaptureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CF10901AE7B03500F5CB9E /* ScreenCaptureTests.m */; };
 		B5CF109B1AE7B06400F5CB9E /* cat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5CF109A1AE7B06400F5CB9E /* cat1.jpg */; };
-		B5CF109D1AE7E5DF00F5CB9E /* ScreenCapture.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5CF109C1AE7E5DF00F5CB9E /* ScreenCapture.gif */; };
+		B5CF109F1AE8063E00F5CB9E /* ScreenCapture.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5CF109E1AE8063E00F5CB9E /* ScreenCapture.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		B5CF108F1AE7B03500F5CB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CF10901AE7B03500F5CB9E /* ScreenCaptureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenCaptureTests.m; sourceTree = "<group>"; };
 		B5CF109A1AE7B06400F5CB9E /* cat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat1.jpg; sourceTree = "<group>"; };
-		B5CF109C1AE7E5DF00F5CB9E /* ScreenCapture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenCapture.gif; sourceTree = "<group>"; };
+		B5CF109E1AE8063E00F5CB9E /* ScreenCapture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenCapture.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 				B5CF10791AE7B03500F5CB9E /* AppDelegate.m */,
 				B5CF107B1AE7B03500F5CB9E /* ViewController.h */,
 				B5CF107C1AE7B03500F5CB9E /* ViewController.m */,
-				B5CF109C1AE7E5DF00F5CB9E /* ScreenCapture.gif */,
+				B5CF109E1AE8063E00F5CB9E /* ScreenCapture.gif */,
 				B5CF107E1AE7B03500F5CB9E /* Main.storyboard */,
 				B5CF10811AE7B03500F5CB9E /* Images.xcassets */,
 				B5CF10831AE7B03500F5CB9E /* LaunchScreen.xib */,
@@ -208,7 +208,7 @@
 				B5CF109B1AE7B06400F5CB9E /* cat1.jpg in Resources */,
 				B5CF10801AE7B03500F5CB9E /* Main.storyboard in Resources */,
 				B5CF10851AE7B03500F5CB9E /* LaunchScreen.xib in Resources */,
-				B5CF109D1AE7E5DF00F5CB9E /* ScreenCapture.gif in Resources */,
+				B5CF109F1AE8063E00F5CB9E /* ScreenCapture.gif in Resources */,
 				B5CF10821AE7B03500F5CB9E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +426,7 @@
 				B5CF10961AE7B03500F5CB9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5CF10971AE7B03500F5CB9E /* Build configuration list for PBXNativeTarget "ScreenCaptureTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +435,7 @@
 				B5CF10991AE7B03500F5CB9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

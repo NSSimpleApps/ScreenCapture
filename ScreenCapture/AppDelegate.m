@@ -40,7 +40,7 @@
     }
 }
 
--(void)saveAssetToAlbum:(UIImage*)image {
+- (void)saveAssetToAlbum:(UIImage*)image {
     
     __block NSString* albumIdentifier = self.existingAlbumIdentifier;
     
@@ -73,6 +73,13 @@
         if (success) {
             
             self.existingAlbumIdentifier = albumIdentifier;
+            
+            UILocalNotification* localNotification = [UILocalNotification new];
+            localNotification.alertTitle = @"Screen has been captured";
+            localNotification.alertBody = @"successfully";
+            
+            [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+            
         } else {
             
             NSLog(@"%@", error);
@@ -104,8 +111,25 @@
     
     // Override point for customization after application launch.
     
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge
+                                                                                         |UIUserNotificationTypeSound
+                                                                                         |UIUserNotificationTypeAlert) categories:nil];
+    [application registerUserNotificationSettings:settings];
+    
     return YES;
 }
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    
+    if (application.applicationState == UIApplicationStateInactive) {
+        
+        UIImagePickerController* imagePicker = [UIImagePickerController new];
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
+        [self.window.rootViewController presentViewController:imagePicker animated:YES completion:nil];
+    }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
