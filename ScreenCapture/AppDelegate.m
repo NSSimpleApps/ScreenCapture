@@ -2,21 +2,108 @@
 //  AppDelegate.m
 //  ScreenCapture
 //
-//  Created by neo on 22.04.15.
+//  Created by NSSimpleApps on 22.04.15.
 //  Copyright (c) 2015 NSSimpleApps. All rights reserved.
 //
 
 #import "AppDelegate.h"
+@import Photos;
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) PHAssetCollectionChangeRequest* collectionRequest;
+
+@property (copy, nonatomic) NSString* existingAlbumIdentifier;
 
 @end
 
 @implementation AppDelegate
 
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    
+    if (event.type == UIEventTypeMotion && event.subtype == UIEventSubtypeMotionShake) {
+        
+        [self saveAssetToAlbum:[self grabWindow]];
+    }
+}
+
+- (NSString*)applicationName {
+    
+    NSString* name = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
+    
+    if (name != nil) {
+        
+        return name;
+    } else {
+        
+        return @"GrabbedImages";
+    }
+}
+
+-(void)saveAssetToAlbum:(UIImage*)image {
+    
+    __block NSString* albumIdentifier = self.existingAlbumIdentifier;
+    
+    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
+        
+        PHFetchResult* fetchCollectionResult;
+        
+        if (albumIdentifier) {
+            
+            fetchCollectionResult = [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[albumIdentifier] options:nil];
+        }
+        
+        if (!fetchCollectionResult || [fetchCollectionResult count] ==0) {
+            
+            self.collectionRequest = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:[self applicationName]];
+            albumIdentifier = self.collectionRequest.placeholderForCreatedAssetCollection.localIdentifier;
+            
+        } else {
+            
+            PHAssetCollection* exisitingCollection = fetchCollectionResult.firstObject;
+            self.collectionRequest = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:exisitingCollection];
+        }
+        
+        PHAssetChangeRequest* createAssetRequest = [PHAssetChangeRequest creationRequestForAssetFromImage:image];
+        
+        [self.collectionRequest addAssets:@[createAssetRequest.placeholderForCreatedAsset]];
+        
+    } completionHandler:^(BOOL success, NSError *error) {
+        
+        if (success) {
+            
+            self.existingAlbumIdentifier = albumIdentifier;
+        } else {
+            
+            NSLog(@"%@", error);
+        }
+    }];
+}
+
+- (UIImage*)grabWindow {
+    
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+        
+        UIGraphicsBeginImageContextWithOptions(self.window.bounds.size, false, [UIScreen mainScreen].scale);
+    } else {
+        
+        UIGraphicsBeginImageContext(self.window.bounds.size);
+    }
+    
+    [self.window.layer renderInContext:UIGraphicsGetCurrentContext()];
+    
+    UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+    
+    //UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
+    
     return YES;
 }
 
