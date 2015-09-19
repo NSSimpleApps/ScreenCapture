@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ghS-gT-OI7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ghS-gT-OI7">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Shake to capture-->
@@ -54,36 +54,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5E-XP-BVq">
-                                <rect key="frame" x="249" y="234" width="103" height="30"/>
-                                <state key="normal" title="Useless button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5Mz-Tx-ou3">
+                                <rect key="frame" x="253" y="72" width="94" height="29"/>
+                            </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6NA-Tk-GDd">
+                                <rect key="frame" x="276" y="109" width="51" height="31"/>
+                            </switch>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gpU-7K-Drh">
-                                <rect key="frame" x="239" y="272" width="123" height="29"/>
+                                <rect key="frame" x="240" y="148" width="121" height="29"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b86-Pc-1Pl">
-                                <rect key="frame" x="276" y="308" width="51" height="31"/>
-                            </switch>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="5Mz-Tx-ou3">
-                                <rect key="frame" x="253" y="347" width="94" height="29"/>
-                            </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5E-XP-BVq">
+                                <rect key="frame" x="249" y="184" width="103" height="30"/>
+                                <state key="normal" title="Useless button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="b86-Pc-1Pl" firstAttribute="top" secondItem="gpU-7K-Drh" secondAttribute="bottom" constant="8" id="8wX-e1-7ZW"/>
-                            <constraint firstItem="gpU-7K-Drh" firstAttribute="top" secondItem="K5E-XP-BVq" secondAttribute="bottom" constant="8" id="Lzq-Om-JMN"/>
-                            <constraint firstAttribute="centerX" secondItem="gpU-7K-Drh" secondAttribute="centerX" constant="-0.5" id="fBE-sI-rrv"/>
-                            <constraint firstAttribute="centerX" secondItem="K5E-XP-BVq" secondAttribute="centerX" constant="-0.5" id="j5b-7g-866"/>
-                            <constraint firstAttribute="centerX" secondItem="5Mz-Tx-ou3" secondAttribute="centerX" id="jdl-UL-4g6"/>
-                            <constraint firstItem="5Mz-Tx-ou3" firstAttribute="top" secondItem="b86-Pc-1Pl" secondAttribute="bottom" constant="8" id="lTT-Ih-IjS"/>
-                            <constraint firstItem="K5E-XP-BVq" firstAttribute="top" secondItem="qna-2p-huL" secondAttribute="bottom" constant="170" id="orY-0V-hMg"/>
-                            <constraint firstAttribute="centerX" secondItem="b86-Pc-1Pl" secondAttribute="centerX" constant="-0.5" id="zff-Ka-L9Z"/>
+                            <constraint firstItem="gpU-7K-Drh" firstAttribute="top" secondItem="6NA-Tk-GDd" secondAttribute="bottom" constant="8" id="3l9-hE-0Dr"/>
+                            <constraint firstItem="6NA-Tk-GDd" firstAttribute="centerX" secondItem="5Mz-Tx-ou3" secondAttribute="centerX" id="7AL-Ph-wM0"/>
+                            <constraint firstItem="gpU-7K-Drh" firstAttribute="centerX" secondItem="6NA-Tk-GDd" secondAttribute="centerX" id="PwY-Si-fxi"/>
+                            <constraint firstItem="K5E-XP-BVq" firstAttribute="top" secondItem="gpU-7K-Drh" secondAttribute="bottom" constant="8" id="YV2-Gf-Uvj"/>
+                            <constraint firstItem="5Mz-Tx-ou3" firstAttribute="centerX" secondItem="2Ti-f7-jhl" secondAttribute="centerX" id="dO2-mQ-kGV"/>
+                            <constraint firstItem="6NA-Tk-GDd" firstAttribute="top" secondItem="5Mz-Tx-ou3" secondAttribute="bottom" constant="8" id="lPL-Ak-Fpl"/>
+                            <constraint firstItem="K5E-XP-BVq" firstAttribute="centerX" secondItem="gpU-7K-Drh" secondAttribute="centerX" id="rO6-6T-7Wj"/>
+                            <constraint firstItem="5Mz-Tx-ou3" firstAttribute="top" secondItem="qna-2p-huL" secondAttribute="bottom" constant="8" id="uYz-UU-6ga"/>
                         </constraints>
                     </view>
                 </viewController>

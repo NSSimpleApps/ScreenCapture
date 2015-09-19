@@ -13,20 +13,9 @@
 		B5CF10801AE7B03500F5CB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CF107E1AE7B03500F5CB9E /* Main.storyboard */; };
 		B5CF10821AE7B03500F5CB9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CF10811AE7B03500F5CB9E /* Images.xcassets */; };
 		B5CF10851AE7B03500F5CB9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5CF10831AE7B03500F5CB9E /* LaunchScreen.xib */; };
-		B5CF10911AE7B03500F5CB9E /* ScreenCaptureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CF10901AE7B03500F5CB9E /* ScreenCaptureTests.m */; };
 		B5CF109B1AE7B06400F5CB9E /* cat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5CF109A1AE7B06400F5CB9E /* cat1.jpg */; };
 		B5CF109F1AE8063E00F5CB9E /* ScreenCapture.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5CF109E1AE8063E00F5CB9E /* ScreenCapture.gif */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B5CF108B1AE7B03500F5CB9E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5CF10691AE7B03400F5CB9E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5CF10701AE7B03500F5CB9E;
-			remoteInfo = ScreenCapture;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B5CF10711AE7B03500F5CB9E /* ScreenCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,22 +28,12 @@
 		B5CF107F1AE7B03500F5CB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5CF10811AE7B03500F5CB9E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5CF10841AE7B03500F5CB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B5CF108A1AE7B03500F5CB9E /* ScreenCaptureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScreenCaptureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5CF108F1AE7B03500F5CB9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5CF10901AE7B03500F5CB9E /* ScreenCaptureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenCaptureTests.m; sourceTree = "<group>"; };
 		B5CF109A1AE7B06400F5CB9E /* cat1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat1.jpg; sourceTree = "<group>"; };
 		B5CF109E1AE8063E00F5CB9E /* ScreenCapture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ScreenCapture.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B5CF106E1AE7B03500F5CB9E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5CF10871AE7B03500F5CB9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				B5CF10731AE7B03500F5CB9E /* ScreenCapture */,
-				B5CF108D1AE7B03500F5CB9E /* ScreenCaptureTests */,
 				B5CF10721AE7B03500F5CB9E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				B5CF10711AE7B03500F5CB9E /* ScreenCapture.app */,
-				B5CF108A1AE7B03500F5CB9E /* ScreenCaptureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,23 +85,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B5CF108D1AE7B03500F5CB9E /* ScreenCaptureTests */ = {
-			isa = PBXGroup;
-			children = (
-				B5CF10901AE7B03500F5CB9E /* ScreenCaptureTests.m */,
-				B5CF108E1AE7B03500F5CB9E /* Supporting Files */,
-			);
-			path = ScreenCaptureTests;
-			sourceTree = "<group>";
-		};
-		B5CF108E1AE7B03500F5CB9E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5CF108F1AE7B03500F5CB9E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,39 +105,17 @@
 			productReference = B5CF10711AE7B03500F5CB9E /* ScreenCapture.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5CF10891AE7B03500F5CB9E /* ScreenCaptureTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5CF10971AE7B03500F5CB9E /* Build configuration list for PBXNativeTarget "ScreenCaptureTests" */;
-			buildPhases = (
-				B5CF10861AE7B03500F5CB9E /* Sources */,
-				B5CF10871AE7B03500F5CB9E /* Frameworks */,
-				B5CF10881AE7B03500F5CB9E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5CF108C1AE7B03500F5CB9E /* PBXTargetDependency */,
-			);
-			name = ScreenCaptureTests;
-			productName = ScreenCaptureTests;
-			productReference = B5CF108A1AE7B03500F5CB9E /* ScreenCaptureTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B5CF10691AE7B03400F5CB9E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = NSSimpleApps;
 				TargetAttributes = {
 					B5CF10701AE7B03500F5CB9E = {
 						CreatedOnToolsVersion = 6.3.1;
-					};
-					B5CF10891AE7B03500F5CB9E = {
-						CreatedOnToolsVersion = 6.3.1;
-						TestTargetID = B5CF10701AE7B03500F5CB9E;
 					};
 				};
 			};
@@ -195,7 +133,6 @@
 			projectRoot = "";
 			targets = (
 				B5CF10701AE7B03500F5CB9E /* ScreenCapture */,
-				B5CF10891AE7B03500F5CB9E /* ScreenCaptureTests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,13 +150,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5CF10881AE7B03500F5CB9E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -233,23 +163,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5CF10861AE7B03500F5CB9E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5CF10911AE7B03500F5CB9E /* ScreenCaptureTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B5CF108C1AE7B03500F5CB9E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B5CF10701AE7B03500F5CB9E /* ScreenCapture */;
-			targetProxy = B5CF108B1AE7B03500F5CB9E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B5CF107E1AE7B03500F5CB9E /* Main.storyboard */ = {
@@ -292,6 +206,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -307,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -345,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,6 +274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScreenCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NSSimpleApps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -369,41 +285,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScreenCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NSSimpleApps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		B5CF10981AE7B03500F5CB9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ScreenCaptureTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenCapture.app/ScreenCapture";
-			};
-			name = Debug;
-		};
-		B5CF10991AE7B03500F5CB9E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ScreenCaptureTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScreenCapture.app/ScreenCapture";
 			};
 			name = Release;
 		};
@@ -424,15 +307,6 @@
 			buildConfigurations = (
 				B5CF10951AE7B03500F5CB9E /* Debug */,
 				B5CF10961AE7B03500F5CB9E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B5CF10971AE7B03500F5CB9E /* Build configuration list for PBXNativeTarget "ScreenCaptureTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5CF10981AE7B03500F5CB9E /* Debug */,
-				B5CF10991AE7B03500F5CB9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
