@@ -14,7 +14,6 @@
 		B5CF10821AE7B03500F5CB9E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CF10811AE7B03500F5CB9E /* Images.xcassets */; };
 		B5CF10851AE7B03500F5CB9E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5CF10831AE7B03500F5CB9E /* LaunchScreen.xib */; };
 		B5CF109B1AE7B06400F5CB9E /* cat1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5CF109A1AE7B06400F5CB9E /* cat1.jpg */; };
-		B5CF109F1AE8063E00F5CB9E /* ScreenCapture.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5CF109E1AE8063E00F5CB9E /* ScreenCapture.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -145,7 +144,6 @@
 				B5CF109B1AE7B06400F5CB9E /* cat1.jpg in Resources */,
 				B5CF10801AE7B03500F5CB9E /* Main.storyboard in Resources */,
 				B5CF10851AE7B03500F5CB9E /* LaunchScreen.xib in Resources */,
-				B5CF109F1AE8063E00F5CB9E /* ScreenCapture.gif in Resources */,
 				B5CF10821AE7B03500F5CB9E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -260,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
