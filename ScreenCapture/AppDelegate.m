@@ -53,7 +53,7 @@
             fetchCollectionResult = [PHAssetCollection fetchAssetCollectionsWithLocalIdentifiers:@[albumIdentifier] options:nil];
         }
         
-        if (!fetchCollectionResult || [fetchCollectionResult count] ==0) {
+        if (!fetchCollectionResult || fetchCollectionResult.count ==0) {
             
             self.collectionRequest = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:[self applicationName]];
             albumIdentifier = self.collectionRequest.placeholderForCreatedAssetCollection.localIdentifier;
